@@ -118,6 +118,7 @@ nav {
   border-radius: 6px;
   font-size: 14px;
   transition: 0.3s;
+  font-weight: 700;
 }
 
 .back-home a:hover,
@@ -207,6 +208,7 @@ header span {
   font-size: 16px;
   max-width: 800px;
   margin: auto;
+  font-weight: 600;
 }
 
 .components {
@@ -248,6 +250,7 @@ header span {
   font-size: 14px;
   color: #555;
   line-height: 1.7;
+  font-weight: 600;
 }
 /*=========================*/
 
@@ -295,12 +298,14 @@ header span {
 .card p {
   color: #555;
   font-size: 15px;
+  font-weight: 600;
 }
 
 .card small {
   display: block;
   margin-top: 10px;
   color: #777;
+  font-weight: 600;
 }
 
 /* ===== Big Card ===== */
@@ -337,6 +342,7 @@ table td {
   padding: 14px;
   border-bottom: 1px solid #eee;
   text-align: center;
+  font-weight: 600;
 }
 
 table tr:hover {
@@ -373,6 +379,7 @@ table tr:hover {
 .imp-card p {
   font-size: 15px;
   color: #444;
+  font-weight: 600;
 }
 
 /* ===== DSS Features ===== */
@@ -412,6 +419,7 @@ table tr:hover {
   font-size: 14px;
   color: #555;
   line-height: 1.7;
+  font-weight: 600;
 }
 
 /* ===== New DSS Design ===== */

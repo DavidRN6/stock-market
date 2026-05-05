@@ -119,6 +119,7 @@ nav {
   border-radius: 6px;
   font-size: 14px;
   transition: 0.3s;
+  font-weight: 700;
 }
 
 .back-home a:hover,
