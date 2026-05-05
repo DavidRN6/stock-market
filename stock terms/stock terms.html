@@ -1,191 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stock Market</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../Images/business.webp" />
+    <link rel="stylesheet" href="terms.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Stock Terms</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="terms.css">
-</head>
-
-<body>
+  <body>
+    <!-- Navbar -->
     <nav>
-        <div class="logo">Stock Market</div>
+      <div class="logo">
+        <a href="/home.html">
+          <i
+            class="fa-solid fa-chart-column"
+            style="color: rgb(255, 165, 0)"
+          ></i>
+          Stock Market
+        </a>
+      </div>
 
-        <ul class="menu">
-
-
-            <li class="dropdown">
-                <a href="#">marker info</a>
-                <ul class="submenu">
-                    <li><a href="../egx/egx.html">Egyptian stock Exchange</a></li>
-                    <li><a href="../Banque misr/Banque misr.html">Banque misr</a></li>
-                </ul>
-            <li><a href="../investors/investors.html">Investors</a></li>
-            </li>
-            <li><a href="../stock terms/stock terms.html">stock terms</a></li>
-
-            <li class="dropdown">
-                <a href="#">DSS</a>
-                <ul class="submenu">
-                    <li><a href="../DSS/DSS.html">what is DSS</a></li>
-                </ul>
-            </li>
-        </ul>
+      <ul class="menu">
+        <li class="dropdown">
+          <a href="#">
+            Market Info
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ul class="submenu">
+            <li><a href="../egx/egx.html">Egyptian stock Exchange</a></li>
+            <li><a href="../Banque misr/Banque misr.html">Banque Misr</a></li>
+          </ul>
+        </li>
+        <li><a href="../investors/investors.html">Investors</a></li>
+        <li><a href="../stock terms/stock terms.html">Stock Terms</a></li>
+        <li><a href="../DSS/DSS.html">DSS</a></li>
+      </ul>
     </nav>
 
-    <button onclick="history.back()" class="btn">➡️</button>
+    <button onclick="history.back()" class="btn">
+      <i class="fa-solid fa-arrow-left"></i>
+      رجوع
+    </button>
 
     <h1>📊 Stock Terms</h1>
 
     <div class="accordion">
+      <!-- 1 -->
+      <div class="item">
+        <button>Stock</button>
+        <div class="content">سهم: جزء من شركة يجعلك شريكًا فيها.</div>
+      </div>
 
-        <div class="item">
-            <button>Stock</button>
-            <div class="content">سهم: جزء من شركة يجعلك شريكًا فيها.</div>
+      <!-- 2 -->
+      <div class="item">
+        <button>Stock Market</button>
+        <div class="content">البورصة: مكان بيع وشراء الأسهم.</div>
+      </div>
+
+      <!-- 3 -->
+      <div class="item">
+        <button>Trading</button>
+        <div class="content">التداول: شراء وبيع الأسهم.</div>
+      </div>
+
+      <!-- 4 -->
+      <div class="item">
+        <button>Investor</button>
+        <div class="content">مستثمر: يشتري ليكسب على المدى الطويل.</div>
+      </div>
+
+      <!-- 5 -->
+      <div class="item">
+        <button>Trader</button>
+        <div class="content">متداول: يبيع ويشتري بسرعة لتحقيق ربح.</div>
+      </div>
+
+      <!-- 6 -->
+      <div class="item">
+        <button>Profit</button>
+        <div class="content">ربح: كسب المال من البيع بسعر أعلى.</div>
+      </div>
+
+      <!-- 7 -->
+      <div class="item">
+        <button>Loss</button>
+        <div class="content">خسارة: فقدان المال عند البيع بسعر أقل.</div>
+      </div>
+
+      <!-- 8 -->
+      <div class="item">
+        <button>Supply & Demand</button>
+        <div class="content">العرض والطلب: زيادة الطلب ترفع السعر.</div>
+      </div>
+
+      <!-- 9 -->
+      <div class="item hidden">
+        <button>Bull Market</button>
+        <div class="content">سوق صاعد: الأسعار ترتفع.</div>
+      </div>
+
+      <!-- 10 -->
+      <div class="item hidden">
+        <button>Bear Market</button>
+        <div class="content">سوق هابط: الأسعار تنخفض.</div>
+      </div>
+
+      <!-- 11 -->
+      <div class="item hidden">
+        <button>Portfolio</button>
+        <div class="content">محفظة: مجموعة الأسهم التي تملكها.</div>
+      </div>
+
+      <!-- 12 -->
+      <div class="item hidden">
+        <button>Diversification</button>
+        <div class="content">تنويع: توزيع المال لتقليل المخاطر.</div>
+      </div>
+
+      <!-- 13 -->
+      <div class="item hidden">
+        <button>Dividend</button>
+        <div class="content">توزيعات: أرباح تُدفع للمساهمين.</div>
+      </div>
+
+      <!-- 14 -->
+      <div class="item hidden">
+        <button>Market Value</button>
+        <div class="content">قيمة سوقية: قيمة الشركة حسب سعرها.</div>
+      </div>
+
+      <!-- 15 -->
+      <div class="item hidden">
+        <button>Opening Price</button>
+        <div class="content">سعر الافتتاح.</div>
+      </div>
+
+      <!-- 16 -->
+      <div class="item hidden">
+        <button>Closing Price</button>
+        <div class="content">سعر الإغلاق.</div>
+      </div>
+
+      <!-- 17 -->
+      <div class="item hidden">
+        <button>Buy Order</button>
+        <div class="content">أمر شراء.</div>
+      </div>
+
+      <!-- 18 -->
+      <div class="item hidden">
+        <button>Sell Order</button>
+        <div class="content">أمر بيع.</div>
+      </div>
+
+      <!-- 19 -->
+      <div class="item hidden">
+        <button>Stop Loss</button>
+        <div class="content">وقف خسارة: بيع لتقليل الخسارة.</div>
+      </div>
+
+      <!-- 20 -->
+      <div class="item hidden">
+        <button>Take Profit</button>
+        <div class="content">
+          جني أرباح:أمر تلقائي لبيع السهم عند سعر محدد لتحقيق الربح
         </div>
+      </div>
 
-        <div class="item">
-            <button>Stock Market</button>
-            <div class="content">البورصة: مكان بيع وشراء الأسهم.</div>
-        </div>
+      <!-- 21 -->
+      <div class="item hidden">
+        <button>Technical Analysis</button>
+        <div class="content">تحليل فني: دراسة الرسوم البيانية.</div>
+      </div>
 
-        <div class="item">
-            <button>Trading</button>
-            <div class="content">التداول: شراء وبيع الأسهم.</div>
-        </div>
+      <!-- 22 -->
+      <div class="item hidden">
+        <button>Fundamental Analysis</button>
+        <div class="content">تحليل أساسي: تحليل أداء الشركة.</div>
+      </div>
 
-        <div class="item">
-            <button>Investor</button>
-            <div class="content">مستثمر: يشتري ليكسب على المدى الطويل.</div>
-        </div>
+      <!-- 23 -->
+      <div class="item hidden">
+        <button>Liquidity</button>
+        <div class="content">سيولة: سهولة البيع والشراء.</div>
+      </div>
 
-        <div class="item">
-            <button>Trader</button>
-            <div class="content">متداول: يبيع ويشتري بسرعة لتحقيق ربح.</div>
-        </div>
+      <!-- 24 -->
+      <div class="item hidden">
+        <button>Capital</button>
+        <div class="content">رأس المال المستخدم للاستثمار.</div>
+      </div>
 
-        <div class="item">
-            <button>Profit</button>
-            <div class="content">ربح: كسب المال من البيع بسعر أعلى.</div>
-        </div>
+      <!-- 25 -->
+      <div class="item hidden">
+        <button>Speculation</button>
+        <div class="content">مضاربة: تداول سريع بمخاطرة.</div>
+      </div>
+    </div>
 
-        <div class="item">
-            <button>Loss</button>
-            <div class="content">خسارة: فقدان المال عند البيع بسعر أقل.</div>
-        </div>
+    <button id="toggleBtn" class="show-more">عرض المزيد</button>
 
-        <div class="item">
-            <button>Supply & Demand</button>
-            <div class="content">العرض والطلب: زيادة الطلب ترفع السعر.</div>
-        </div>
+    <h2>💡 Investment Tips</h2>
 
-        <div class="item">
-            <button>Bull Market</button>
-            <div class="content">سوق صاعد: الأسعار ترتفع.</div>
-        </div>
+    <div class="tips-box">
+      <ul>
+        <li>ابدأ بمبلغ صغير عشان تقللي المخاطرة.</li>
+        <li>نوع استثماراتك لتقليل الخسارة.</li>
+        <li>اتعلم الأساسيات قبل الدخول في السوق.</li>
+        <li>متخدش قرارات بالعاطفة.</li>
+        <li>استخدم وقف الخسارة لحماية رأس المال.</li>
+        <li>فكر على المدى الطويل مش السريع.</li>
+        <li>تابع الأخبار الاقتصادية باستمرار.</li>
+        <li>اختار شركات قوية ومستقرة.</li>
+      </ul>
+    </div>
 
-        <div class="item">
-            <button>Bear Market</button>
-            <div class="content">سوق هابط: الأسعار تنخفض.</div>
-        </div>
-
-        <div class="item">
-            <button>Portfolio</button>
-            <div class="content">محفظة: مجموعة الأسهم التي تملكها.</div>
-        </div>
-
-        <div class="item">
-            <button>Diversification</button>
-            <div class="content">تنويع: توزيع المال لتقليل المخاطر.</div>
-        </div>
-
-        <div class="item">
-            <button>Dividend</button>
-            <div class="content">توزيعات: أرباح تُدفع للمساهمين.</div>
-        </div>
-
-        <div class="item">
-            <button>Market Value</button>
-            <div class="content">قيمة سوقية: قيمة الشركة حسب سعرها.</div>
-        </div>
-
-        <div class="item">
-            <button>Opening Price</button>
-            <div class="content">سعر الافتتاح.</div>
-        </div>
-
-        <div class="item">
-            <button>Closing Price</button>
-            <div class="content">سعر الإغلاق.</div>
-        </div>
-
-        <div class="item">
-            <button>Buy Order</button>
-            <div class="content">أمر شراء.</div>
-        </div>
-
-        <div class="item">
-            <button>Sell Order</button>
-            <div class="content">أمر بيع.</div>
-        </div>
-
-        <div class="item">
-            <button>Stop Loss</button>
-            <div class="content">وقف خسارة: بيع لتقليل الخسارة.</div>
-        </div>
-
-        <div class="item">
-            <button>Take Profit</button>
-            <div class="content">جني أرباح.</div>
-        </div>
-
-        <div class="item">
-            <button>Technical Analysis</button>
-            <div class="content">تحليل فني: دراسة الرسوم البيانية.</div>
-        </div>
-
-        <div class="item">
-            <button>Fundamental Analysis</button>
-            <div class="content">تحليل أساسي: تحليل أداء الشركة.</div>
-        </div>
-
-        <div class="item">
-            <button>Liquidity</button>
-            <div class="content">سيولة: سهولة البيع والشراء.</div>
-        </div>
-
-        <div class="item">
-            <button>Capital</button>
-            <div class="content">رأس المال المستخدم للاستثمار.</div>
-        </div>
-
-        <div class="item">
-            <button>Speculation</button>
-            <div class="content">مضاربة: تداول سريع بمخاطرة.</div>
-        </div>
-
-        <h2>💡 Investment Tips</h2>
-
-        <div class="tips-box">
-
-            <ul>
-                <li>ابدأ بمبلغ صغير عشان تقللي المخاطرة.</li>
-                <li>نوع استثماراتك لتقليل الخسارة.</li>
-                <li>اتعلم الأساسيات قبل الدخول في السوق.</li>
-                <li>متخدش قرارات بالعاطفة.</li>
-                <li>استخدم وقف الخسارة لحماية رأس المال.</li>
-                <li>فكر على المدى الطويل مش السريع.</li>
-                <li>تابع الأخبار الاقتصادية باستمرار.</li>
-                <li>اختار شركات قوية ومستقرة.</li>
-            </ul>
-
-        </div>
-
-        <div class="back">
-            <a href="../index.html">العودة للصفحة الرئيسية</a>
-        </div>
-        <script src="script.js"></script>
-</body>
-
+    <div class="back-home">
+      <a href="../home.html">
+        <i class="fa-solid fa-house"></i>
+        العودة للصفحة الرئيسية
+      </a>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
