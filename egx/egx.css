@@ -1,217 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Cairo", sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #eef2f5;
-    direction: rtl;
-    padding: 10px;
+  font-family: "Cairo", sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  padding: 0;
 }
 
-.egx {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
+/* العنوان الرئيسي */
+.title {
+  text-align: center;
+  font-size: 36px;
+  color: #0f172a;
+  font-weight: 700;
 }
 
-h1 {
-    color: #004080;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-h2 {
-    color: #0066cc;
-    margin-top: 20px;
-}
-
-p {
-    line-height: 1.7;
-    margin-bottom: 10px;
-}
-
-ul {
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-.card {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.activity {
-    margin-bottom: 15px;
-    padding: 10px;
-    border-left: 4px solid #0066cc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
+/* الصورة */
 img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 20px;
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.indices {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 10px;
+/* الصفحة الأساسية */
+.egx {
+  max-width: 95%;
+  margin: auto;
+  gap: 15px;
+  line-height: 1.8;
+  color: #1f2937;
+  display: flex;
+  justify-content: space-between;
 }
 
-.indices h2 {
-    color: #004080;
-    text-align: center;
-    margin-bottom: 20px;
+/* العناوين */
+.egx h2 {
+  margin-top: 40px;
+  font-size: 26px;
+  color: #0f172a;
+  border-right: 4px solid #2563eb;
+  padding-right: 10px;
 }
 
+.egx h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+/* الفقرات */
+.egx p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* القوائم */
+.egx ul {
+  padding-right: 20px;
+}
+
+.egx li {
+  margin-bottom: 8px;
+}
+
+/* الكروت */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* الأقسام الفرعية */
+.activity {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.activity:last-child {
+  border-bottom: none;
+}
+
+/* Section خاص بالمؤشرات */
 .indices .card {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 15px;
 }
 
-.indices .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+/* تحسين النصوص داخل الكروت */
+.card p {
+  color: #374151;
 }
 
-.indices h3 {
-    color: #0066cc;
-    margin-bottom: 10px;
-}
 
-.indices ul {
-    margin-left: 20px;
-}
-
-.trading {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 10px;
-}
-
-.trading h2 {
-    color: #004080;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.trading .card {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.trading .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-.trading h3 {
-    color: #0066cc;
-    margin-bottom: 10px;
-}
-
-.trading ul {
-    margin-left: 20px;
-}
-
+/*========= Navbar ============*/
 nav {
-    background: rgb(64, 83, 117);
-    padding: 15px 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    direction: ltr;
-    color: white;
+  background: #0f172a;
+  padding: 15px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .menu {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  gap: 10px;
 }
 
 .menu li {
-    position: relative;
+  position: relative;
 }
 
 .menu li a {
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    font-size: 16px;
-    color: white;
-    transition:
-        background 0.3s,
-        color 0.3s;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  border-radius: 6px;
+  color: #fff;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 .menu li a:hover {
-    background-color: #283754;
-    border-radius: 6px;
+  background-color: orange;
+  color: white;
 }
 
 .submenu {
-    display: none;
-    position: absolute;
-    background: #1a263b;
-    top: 100%;
-    right: 0;
-    list-style: none;
-    min-width: 160px;
-    z-index: 10;
-    border-radius: 6px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  position: absolute;
+  background: #1a263b;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  min-width: 160px;
+  z-index: 10;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  padding: 5px 0;
+  margin-top: 5px;
+}
+
+.dropdown:hover > .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .submenu li a {
-    padding: 10px 20px;
-    color: white;
-    transition: background 0.3s;
+  padding: 10px 20px;
+  color: white;
+  transition: background 0.3s;
 }
-
-.submenu li a:hover {
-    /* بدل .submenu li a :hover */
-    background-color: #283754;
-}
-
-.dropdown:hover>.submenu {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-
+/*==========================*/
 .btn {
-    padding: 10px 18px;
-    margin: 10px;
-    border: none;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #6c8cff, #ff9ecf);
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    text-decoration: none;
-    transition: 0.3s;
+  margin: 15px 26px;
+  padding: 10px 24px;
+  background: #1a263b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
 }
 
-.btn:hover {
-    transform: scale(1.05);
+.back-home {
+  margin: 40px 0 20px;
+  text-align: center;
 }
+
+.back-home a {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #1a263b;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.back-home a:hover,
+.btn:hover {
+  background-color: #283754;
+  transform: translateY(-5px);
+}
+/*==========================*/
