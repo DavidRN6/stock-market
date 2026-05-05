@@ -7,12 +7,13 @@
 
 /*========= Navbar ============*/
 nav {
-  background: white;
+  background: #0f172a;
   padding: 15px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #0f172a;
+  color: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -22,6 +23,11 @@ nav {
   font-size: 25px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .menu {
@@ -41,7 +47,7 @@ nav {
   padding: 10px 20px;
   display: block;
   font-size: 16px;
-  color: #0f172a;
+  color: #fff;
   transition:
     background 0.3s,
     color 0.3s;
@@ -82,7 +88,6 @@ nav {
   color: white;
   transition: background 0.3s;
 }
-
 /*==========================*/
 
 /*============= Hero =============*/

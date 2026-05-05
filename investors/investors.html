@@ -1,211 +1,194 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Market</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="investors.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="investors.css">
-</head>
-
-<body>
+  <body>
     <!-- Navbar -->
     <nav>
-        <div class="logo">Stock Market</div>
+      <div class="logo">
+        <a href="/home.html">
+          <i
+            class="fa-solid fa-chart-column"
+            style="color: rgb(255, 165, 0)"
+          ></i>
+          Stock Market
+        </a>
+      </div>
 
-        <ul class="menu">
-
-
-            <li class="dropdown">
-                <a href="#">marker info</a>
-                <ul class="submenu">
-                    <li><a href="../egx/egx.html">Egyptian stock Exchange</a></li>
-                    <li><a href="../Banque misr/Banque misr.html">Banque misr</a></li>
-                </ul>
-            <li><a href="../investors/investors.html">Investors</a></li>
-            </li>
-            <li><a href="../stock terms/stock terms.html">stock terms</a></li>
-
-            <li class="dropdown">
-                <a href="#">DSS</a>
-                <ul class="submenu">
-                    <li><a href="../DSS/DSS.html">what is DSS</a></li>
-                </ul>
-            </li>
-        </ul>
+      <ul class="menu">
+        <li class="dropdown">
+          <a href="#">Market Info</a>
+          <ul class="submenu">
+            <li><a href="../egx/egx.html">Egyptian stock Exchange</a></li>
+            <li><a href="../Banque misr/Banque misr.html">Banque Misr</a></li>
+          </ul>
+        </li>
+        <li><a href="../investors/investors.html">Investors</a></li>
+        <li><a href="../stock terms/stock terms.html">Stock Terms</a></li>
+        <li><a href="../DSS/DSS.html">DSS</a></li>
+      </ul>
     </nav>
-    <button onclick="history.back()" class="btn">➡️</button>
 
-    <section class="investors-page">
+    <button onclick="history.back()" class="btn">
+      <i class="fa-solid fa-arrow-left"></i>
+      رجوع
+    </button>
 
-        <h1>المستثمرون</h1>
-        <strong>كل ما تحتاج معرفته عن الاستثمار والتداول وإدارة المحافظ<strong>
+    <section class="investors-page" dir="rtl">
+      <h1>المستثمرون</h1>
+      <p class="subtitle">
+        كل ما تحتاج معرفته عن الاستثمار والتداول وإدارة المحافظ
+      </p>
 
-                <div class="cards">
+      <div class="cards">
+        <!-- CARD 1 -->
+        <div class="card blue">
+          <h2>👤 المستثمرون</h2>
 
-                    <!-- CARD 1 -->
-                    <div class="card blue">
-                        <h2>👤 المستثمرون</h2>
+          <details>
+            <summary>تعريف المستثمرين</summary>
+            <p>المستثمر هو الشخص أو الجهة التي تقوم بتوظيف الأموال...</p>
+          </details>
 
-                        <details>
-                            <summary>تعريف المستثمرين</summary>
-                            <p>المستثمر هو الشخص أو الجهة التي تقوم بتوظيف الأموال في أدوات مالية مختلفة مثل الأسهم
-                                والسندات
-                                بهدف تحقيق عائد مادي.</p>
-                        </details>
+          <details>
+            <summary>أهداف المستثمرين</summary>
+            <ul>
+              <li>تحقيق أرباح قصيرة أو طويلة</li>
+              <li>تنمية رأس المال</li>
+              <li>الحفاظ على قيمة الأموال</li>
+            </ul>
+          </details>
 
-                        <details>
-                            <summary>أهداف المستثمرين</summary>
-                            <ul>
-                                <li>تحقيق أرباح قصيرة أو طويلة </li>
-                                <li>تنمية رأس المال </li>
-                                <li>الحفاظ على قيمة الأموا ل</li>
-                            </ul>
-                        </details>
+          <details>
+            <summary>دور المستثمرين في السوق</summary>
+            <p>يساهم المستثمرون في تحريك السوق...</p>
+          </details>
 
-                        <details>
-                            <summary>دور المستثمرين في السوق</summary>
-                            <p>يساهم المستثمرون في تحريك السوق وزيادة السيولة ودعم نمو الشركات.</p>
-                        </details>
+          <details>
+            <summary>أنواع المستثمرين</summary>
+            <ul>
+              <li>
+                <strong>🧑‍💼 المستثمر الفردي:</strong>
+                شخص يستثمر أمواله بنفسه.
+              </li>
 
-                        <details>
-                            <summary> انواع المستثمرين</summary>
-                            <ul>
-                                <ul>
+              <li>
+                <strong>🏢 المستثمر المؤسسي:</strong>
+                جهة كبيرة مثل البنوك.
+              </li>
 
-                                    <li>
-                                        <strong>🧑‍💼 المستثمر الفردي:</strong>
-                                        هو شخص عادي يستثمر أمواله بنفسه في السوق بهدف تحقيق ربح شخصي وتنمية مدخراته.
-                                        <br>
-                                        📌 مثال: شخص يشتري أسهم أو عقارات بمفرده لإدارة أمواله.
-                                    </li>
+              <li>
+                <strong>📊 طويل الأجل:</strong>
+                يحتفظ بالأصول لفترة طويلة.
+              </li>
 
-                                    <li>
-                                        <strong>🏢 المستثمر المؤسسي:</strong>
-                                        هو جهة كبيرة مثل البنوك أو شركات الاستثمار تقوم بإدارة واستثمار أموال ضخمة نيابة
-                                        عن عملاء أو مؤسسات.
-                                        <br>
-                                        📌 مثال: بنك يستثمر أموال العملاء في الأسهم والسندات.
-                                    </li>
+              <li>
+                <strong>⚡ مضارب:</strong>
+                بيع وشراء سريع لتحقيق ربح.
+              </li>
+            </ul>
+          </details>
+        </div>
 
-                                    <li>
-                                        <strong>📊 المستثمر طويل الأجل:</strong>
-                                        هو مستثمر يحتفظ بالأصول لفترة طويلة بهدف تحقيق نمو تدريجي في القيمة والعائد.
-                                        <br>
-                                        📌 مثال: شراء سهم والاحتفاظ به لسنوات حتى يرتفع سعره.
-                                    </li>
+        <!-- CARD 2 -->
+        <div class="card green">
+          <h2>📈 التداول</h2>
 
-                                    <li>
-                                        <strong>⚡ المستثمر المضارب قصير الأجل:</strong>
-                                        هو مستثمر يعتمد على البيع والشراء السريع للاستفادة من تقلبات الأسعار خلال فترة
-                                        قصيرة.
-                                        <br>
-                                        📌 مثال: شراء سهم وبيعه خلال أيام أو أسابيع لتحقيق ربح سريع.
-                                    </li>
+          <details>
+            <summary>تعريف التداول</summary>
+            <p>هو شراء وبيع الأسهم...</p>
+          </details>
 
-                                </ul>
+          <details>
+            <summary>كيف يتم التداول</summary>
+            <ul>
+              <li>اختيار السهم</li>
+              <li>تحليل السوق</li>
+              <li>تنفيذ العملية</li>
+            </ul>
+          </details>
 
-                        </details>
-                    </div>
+          <details>
+            <summary>عوامل النجاح</summary>
+            <ul>
+              <li>متابعة السوق</li>
+              <li>قرار مناسب</li>
+              <li>تقليل المخاطر</li>
+            </ul>
+          </details>
+        </div>
 
-                    <!-- CARD 2 -->
-                    <div class="card green">
-                        <h2>📈 التداول</h2>
+        <!-- CARD 3 -->
+        <div class="card purple">
+          <h2>💼 المحافظ الاستثمارية</h2>
 
-                        <details>
-                            <summary>تعريف التداول</summary>
-                            <p>هو شراء وبيع الأسهم والأوراق المالية داخل البورصة بهدف تحقيق الربح.</p>
-                        </details>
+          <details>
+            <summary>تعريف المحفظة</summary>
+            <p>هي مجموعة من الأصول المالية...</p>
+          </details>
 
-                        <details>
-                            <summary>كيف يتم التداول</summary>
-                            <ul>
-                                <li>اختيار السهم</li>
-                                <li>تحليل السوق</li>
-                                <li>تنفيذ عملية البيع أو الشراء</li>
-                            </ul>
-                        </details>
+          <details>
+            <summary>الأهمية</summary>
+            <ul>
+              <li>تقليل المخاطر</li>
+              <li>تنويع الاستثمارات</li>
+              <li>زيادة الربح</li>
+            </ul>
+          </details>
 
-                        <details>
-                            <summary>عوامل نجاح التداول</summary>
-                            <ul>
-                                <li>متابعة السوق</li>
-                                <li>اتخاذ القرار المناسب</li>
-                                <li>تقليل المخاطر</li>
-                            </ul>
-                        </details>
-                    </div>
+          <details>
+            <summary>الإدارة</summary>
+            <p>يتم إدارتها من خلال تحليل السوق...</p>
+          </details>
+        </div>
 
-                    <!-- CARD 3 -->
-                    <div class="card purple">
-                        <h2>💼 المحافظ الاستثمارية</h2>
+        <!-- CARD 4 -->
+        <div class="card orange">
+          <h2>📊 صناديق الاستثمار</h2>
 
-                        <details>
-                            <summary>تعريف المحفظة</summary>
-                            <p>هي مجموعة من الأصول المالية مثل الأسهم والسندات يمتلكها المستثمر.</p>
-                        </details>
+          <details>
+            <summary>التعريف</summary>
+            <p>وعاء مالي يتم فيه تجميع أموال المستثمرين...</p>
+          </details>
 
-                        <details>
-                            <summary>أهمية المحافظ</summary>
-                            <ul>
-                                <li>تقليل المخاطر</li>
-                                <li>تنويع الاستثمارات</li>
-                                <li>زيادة فرص الربح</li>
-                            </ul>
-                        </details>
+          <details>
+            <summary>الأسهم</summary>
+            <p>هي أجزاء من ملكية شركة...</p>
+          </details>
 
-                        <details>
-                            <summary>إدارة المحافظ</summary>
-                            <p>يقوم البنك بإدارة المحافظ من خلال تحليل السوق واختيار أفضل الاستثمارات.</p>
-                        </details>
+          <details>
+            <summary>السندات</summary>
+            <p>أداة استثمار بعائد ثابت...</p>
+          </details>
 
-                    </div>
-                    <!-- card 4 -->
-                    <div class="card orange">
-                        <h2>صناديق الاستثمار 📊</h2>
-
-                        <details>
-                            <summary>تعريف صناديق الاستثمار</summary>
-                            <p> وعاء مالي يتم فيه تجميع أموال المستثمرين واستثمارها بواسطه خبراء في الأسهم والسندات
-                                والعقارات بهدف تحقيق ارباح وتقليل المخاطر</p>
-
-                        </details>
-
-                        <details>
-                            <summary>الاسهم </summary>
-                            <p> .هي اجزاء صغيره من ملكيه شركه،وعند شرائها تصبح شريكآ في الشركه بنسبه معينه،وتربح من
-                                زياده
-                                سعر السهم او من الارباح التي توزعها الشركه</p>
-                            <small>📌 مثال: • 📈 شراء: اشتريت سهم شركة بسعر 100 جنيه بهدف تحقيق ربح عند ارتفاعه في
-                                المستقبل.
-                            </small>
-                            <br>
-                            <small> 📌 مثال: 💰 بيع: اشتريت سهم بـ 100 جنيه ثم بعته بـ 150 جنيه فحققت ربح 50
-                                جنيه</small>
-                            <br>
-                            <small>📌 مثال: ⏳ احتفاظ: اشتريت سهم بـ 100 جنيه وقررت الاحتفاظ به فترة انتظارًا لزيادة سعره
-                                في المستقبل</small>
-                        </details>
-
-                        <details>
-                            <summary> السندات</summary>
-                            <p>هي أداة استثمارية يقوم فيها المستثمر بتقديم مبلغ من المال للحكومة أو لشركة، على أن يتم
-                                استرداده بعد فترة محددة مع الحصول على ربح ثابت </p>
-                            <small>📌 مثال:
-                                شخص اشترى سند بقيمة 1000 جنيه لمدة سنة بعائد 10%، وبعد سنة يحصل على 1000 جنيه + 100 جنيه
-                                ربح، أي يصبح الإجمالي 1100 جنيه</small>
-                        </details>
-
-                        <details>
-                            <summary> العقارات</summary>
-                            <p> نوع من الاستثمار يتم فيه شراء ممتلكات مثل الشقق أو الأراضي أو المحلات بهدف تأجيرها أو
-                                بيعها لاحقآ بسعر أعلي لتحقيق ربح.</p>
-                            <small>📌 مثال: اشترى شقة بـ 800,000 جنيه، أجرها شهريًا ثم ارتفع سعرها وباعها بـ 1,300,000
-                                جنيه</small>
-                        </details>
+          <details>
+            <summary>العقارات</summary>
+            <p>شراء ممتلكات بهدف الربح...</p>
+          </details>
+        </div>
+      </div>
     </section>
-    <div class="back">
-        <a href="../index.html">العودة للصفحة الرئيسية</a>
+    <div class="back-home">
+      <a href="../home.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        العودة للصفحة الرئيسية
+      </a>
     </div>
-</body>
-
+  </body>
 </html>
