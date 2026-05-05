@@ -47,6 +47,7 @@ nav {
   padding: 10px 20px;
   display: block;
   font-size: 16px;
+  border-radius: 6px;
   color: #fff;
   transition:
     background 0.3s,
@@ -55,7 +56,6 @@ nav {
 
 .menu li a:hover {
   background-color: orange;
-  border-radius: 6px;
   color: white;
 }
 
@@ -143,13 +143,15 @@ nav {
 .subtitle {
   color: #64748b;
   margin-bottom: 30px;
+  font-weight: 600;
 }
 
 /* الكروت */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
+  overflow-x: auto;
 }
 
 /* الكارت */

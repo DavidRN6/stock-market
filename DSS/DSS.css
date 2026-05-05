@@ -1,15 +1,132 @@
-/* ===== Reset ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-family: "Inter", "Cairo", sans-serif;
 }
 
-body {
-  background: linear-gradient(to right, #f8f9fa, #eef2f7);
-  color: #1a1a1a;
+/*========= Navbar ============*/
+nav {
+  background: #0f172a;
+  padding: 15px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  gap: 10px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  border-radius: 6px;
+  color: #fff;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+.menu li a:hover {
+  background-color: orange;
+  color: white;
+}
+
+.submenu {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  position: absolute;
+  background: #1a263b;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  min-width: 160px;
+  z-index: 10;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  padding: 5px 0;
+  margin-top: 5px;
+}
+
+.dropdown:hover > .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.submenu li a {
+  padding: 10px 20px;
+  color: white;
+  transition: background 0.3s;
+}
+/*==========================*/
+.btn {
+  margin: 15px 26px;
+  padding: 10px 24px;
+  background: #1a263b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.back-home {
+  margin-top: 40px;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.back-home a {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #1a263b;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.back-home a:hover,
+.btn:hover {
+  background-color: #283754;
+  transform: translateY(-5px);
+}
+/*==========================*/
 
 /* ===== Container ===== */
 .container {
@@ -197,27 +314,6 @@ table tr:hover {
   background: #f5f7fa;
 }
 
-/* ===== Back Button ===== */
-.back {
-  text-align: center;
-  margin: 60px 0;
-}
-
-.back a {
-  text-decoration: none;
-  background: #ffd60a;
-  color: black;
-  padding: 14px 30px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.back a:hover {
-  background: #ffc300;
-  transform: scale(1.05);
-}
-
 /* ===== Importance Cards ===== */
 .importance-grid {
   display: grid;
@@ -290,15 +386,6 @@ table tr:hover {
   line-height: 1.7;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
 /* ===== New DSS Design ===== */
 .dss-wrapper {
   margin-top: 70px;
@@ -347,20 +434,6 @@ table tr:hover {
   margin-bottom: 10px;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 30px;
-  }
-
-  .title {
-    font-size: 24px;
-  }
-
-  .column {
-    width: 100%;
-  }
-}
 
 .tabs {
   display: flex;
@@ -386,79 +459,4 @@ table tr:hover {
 
 .tab-content {
   display: none;
-}
-
-nav {
-  background: rgb(64, 83, 117);
-  padding: 15px 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  direction: ltr;
-  color: white;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-.menu li {
-  position: relative;
-}
-
-.menu li a {
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
-  font-size: 16px;
-  color: white;
-  transition:
-    background 0.3s,
-    color 0.3s;
-}
-
-.menu li a:hover {
-  background-color: #283754;
-  border-radius: 6px;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  background: #1a263b;
-  top: 100%;
-  right: 0;
-  list-style: none;
-  min-width: 160px;
-  z-index: 10;
-  border-radius: 6px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.submenu li a {
-  padding: 10px 20px;
-  color: white;
-  transition: background 0.3s;
-}
-
-.submenu li a:hover {
-  /* بدل .submenu li a :hover */
-  background-color: #283754;
-}
-
-.dropdown:hover>.submenu {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
 }
