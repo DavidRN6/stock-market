@@ -1,0 +1,311 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Cairo", sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/*============ Layout ================*/
+.intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80vh;
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* responsive */
+@media (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+    padding: 80px;
+  }
+}
+/*============ Layout ================*/
+
+/*============ glow =============*/
+.glow {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  filter: blur(120px);
+}
+
+.glow-top {
+  top: -10%;
+  left: -10%;
+  background: rgba(255, 165, 0, 0.1);
+}
+
+.glow-bottom {
+  bottom: -10%;
+  right: -10%;
+
+}
+/*============ glow =============*/
+
+/*============ text =============*/
+.text-container {
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* responsive */
+@media (min-width: 768px) {
+  .text-container {
+    width: 50%;
+  }
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 72px;
+  }
+}
+
+.title span {
+  color: rgb(255, 165, 0);
+  font-style: italic;
+}
+
+.description {
+  font-size: 18px;
+  opacity: 0.7;
+  max-width: 500px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 20px;
+  }
+}
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: orange;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: #0f172a;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+}
+
+.cta-btn:active {
+  transform: scale(0.95);
+}
+
+/* animations */
+.fade-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeLeft 0.8s forwards;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s forwards;
+}
+
+/* delays */
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* keyframes */
+@keyframes fadeLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*============ text =============*/
+
+/*============ visual ============*/
+.visual {
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .visual {
+    margin-top: 0;
+  }
+}
+
+.card {
+  position: relative;
+  width: 420px;
+  height: 300px;
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* dots */
+.dots {
+  display: flex;
+  gap: 5px;
+  opacity: 0.3;
+  margin-bottom: 10px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dots span:nth-child(1) {
+  background: red;
+}
+.dots span:nth-child(2) {
+  background: yellow;
+}
+.dots span:nth-child(3) {
+  background: green;
+}
+
+/* chart line (fake) */
+.chart-line {
+  height: 2px;
+  background: linear-gradient(to right, orange, #ffa500);
+  margin: 20px 0;
+  animation: lineMove 2s infinite alternate;
+}
+
+@keyframes lineMove {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* bars */
+.bars {
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  gap: 5px;
+}
+
+.bars div {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* floating cards */
+.float-card {
+  position: absolute;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  animation: float 4s infinite ease-in-out;
+}
+
+.float-card.top {
+  top: -20px;
+  right: -10px;
+  background: orange;
+  color: #0f172a;
+}
+
+.float-card.bottom {
+  bottom: -20px;
+  left: -10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* AI card */
+.ai-card {
+  position: absolute;
+  right: -40px;
+  bottom: 40px;
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+  width: 140px;
+}
+
+.ai-card h2 {
+  margin: 5px 0;
+  color: green;
+}
+
+.progress {
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress div {
+  width: 85%;
+  height: 100%;
+  background: orange;
+  animation: grow 1.5s ease;
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}

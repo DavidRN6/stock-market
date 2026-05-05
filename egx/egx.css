@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+    direction: rtl;
+    padding: 10px;
+}
+
+.egx {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #004080;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #0066cc;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.activity {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #0066cc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.indices {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.indices h2 {
+    color: #004080;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.indices .card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.indices .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.indices h3 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.indices ul {
+    margin-left: 20px;
+}
+
+.trading {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.trading h2 {
+    color: #004080;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trading .card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trading .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.trading h3 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.trading ul {
+    margin-left: 20px;
+}
+
+nav {
+    background: rgb(64, 83, 117);
+    padding: 15px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    direction: ltr;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 16px;
+    color: white;
+    transition:
+        background 0.3s,
+        color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #283754;
+    border-radius: 6px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: #1a263b;
+    top: 100%;
+    right: 0;
+    list-style: none;
+    min-width: 160px;
+    z-index: 10;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    color: white;
+    transition: background 0.3s;
+}
+
+.submenu li a:hover {
+    /* بدل .submenu li a :hover */
+    background-color: #283754;
+}
+
+.dropdown:hover>.submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn {
+    padding: 10px 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6c8cff, #ff9ecf);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}

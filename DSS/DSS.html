@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSS System</title>
+
+    <link rel="stylesheet" href="DSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Stock Market</div>
+
+        <ul class="menu">
+
+
+            <li class="dropdown">
+                <a href="#">marker info</a>
+                <ul class="submenu">
+                    <li><a href="../egx/egx.html">Egyptian stock Exchange</a></li>
+                    <li><a href="../Banque misr/Banque misr.html">Banque misr</a></li>
+                </ul>
+            <li><a href="../investors/investors.html">Investors</a></li>
+            </li>
+            <li><a href="../stock terms/stock terms.html">stock terms</a></li>
+
+            <li class="dropdown">
+                <a href="#">DSS</a>
+                <ul class="submenu">
+                    <li><a href="../DSS/DSS.html">what is DSS</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <header>
+            <h1>نظم دعم القرار <span>DSS</span></h1>
+            <p class="subtitle">
+                تكنولوجيا تساعد المؤسسات على اتخاذ قرارات دقيقة
+                من خلال تحليل البيانات والمعلومات.
+            </p>
+        </header>
+
+        <!-- 🔵 TABS -->
+        <div class="tabs">
+            <button onclick="showTab('def')">التعريف والمكونات</button>
+            <button onclick="showTab('types')">الانواع</button>
+            <button onclick="showTab('importance')">الاهميه</button>
+            <button onclick="showTab('features')">المميزات والعيوب</button>
+            <button onclick="showTab('challenges')">التحديات</button>
+            <button onclick="showTab('software')">البرامج</button>
+        </div>
+
+        <!-- 🟦 DEF -->
+        <div id="def" class="tab-content" style="display:block;">
+
+            <div class="card big definition-card">
+                <i class="fas fa-brain"></i>
+
+                <h2>ما هي نظم دعم القرار ؟</h2>
+
+                <p>
+                    نظم دعم القرار هي أنظمة معلومات تعتمد على الحاسوب
+                    تساعد المديرين وصناع القرار في تحليل البيانات
+                    واختيار أفضل الحلول الممكنة.
+                    تقوم هذه الأنظمة بتحويل البيانات المعقدة
+                    إلى معلومات واضحة تساعد في اتخاذ القرار الصحيح.
+                </p>
+            </div>
+
+            <div class="components">
+
+                <h2 class="components-title">مكونات نظام DSS</h2>
+
+                <div class="components-grid">
+
+                    <div class="component-card">
+                        <strong>قاعدة البيانات (Database)</strong>
+                        <p>هي المكان الذي يخزن كل البيانات التي يحتاجها النظام لاتخاذ القرارات.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <strong>نظام إدارة البيانات (DBMS)</strong>
+                        <p>البرنامج الذي بيساعد على تنظيم البيانات والوصول اليها وإدارتها بسهولة.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <strong>نظام النماذج (Model Base)</strong>
+                        <p>مجموعة النماذج الرياضية أو التحليلية التي بيتم استخدامها لدعم اتخاذ القرار.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <strong>واجهة المستخدم (User Interface)</strong>
+                        <p>الوسيط بين المستخدم والنظام، الذي من خلاله المستخدم بيتعامل مع DSS.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 🟨 TYPES -->
+        <div id="types" class="tab-content">
+
+            <h2 class="title">أنواع نظم دعم القرار</h2>
+
+            <div class="grid">
+
+                <div class="card">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Driven</h3>
+                    <p>تعتمد على تحليل البيانات الكبيرة واستخراج المعلومات المفيدة.</p>
+                    <small>مثال: تحليل مبيعات شركه لتحديد المنتجات التي يجب ان تزيد او تقل</small>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Knowledge Driven</h3>
+                    <p>تعتمد على الخبرة وقواعد المعرفة لتقديم توصيات لصناع القرار.</p>
+                    <small> مثال: نظام طبي يقدم تشخيصات بناءآ علي قاعده بيانات للأعراض والأمراض</small>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Model Driven</h3>
+                    <p>تعتمد على نماذج رياضية وإحصائية لدراسة السيناريوهات المختلفة.</p>
+                    <small> مثال: نموذج لتحديد افضل خطه إنتاج لتقليل التكاليف </small>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <h3>Communication Driven</h3>
+                    <p>تساعد فرق العمل على التعاون لاتخاذ قرارات جماعية.</p>
+                    <small> مثال :الإداره تتشارك البيانات والنماذج علي منصه واحده لاتخاذ القرار </small>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Hybrid DSS</h3>
+                    <p>يجمع بين أكثر من نوع من الأنظمه السابقه للحصول على أفضل دعم للقرار.</p>
+                    <small> مثال: يستخدم قواعد بيانات + نماذج + خبره سابقه لاتخاذ قرارات استراتيجيه</small>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 🟩 IMPORTANCE -->
+        <div id="importance" class="tab-content">
+
+            <h2 class="title">أهمية نظم دعم القرار</h2>
+
+            <div class="importance-grid">
+
+                <div class="imp-card">
+                    <strong>تحسين جوده القرار </strong>
+                    <p>تساعد علي تحليل كميات كبيره من البيانات بسرعه مما يؤدي الي قرارات ادق </p>
+
+                </div>
+
+                <div class="imp-card">
+                    <strong>دعم القرارات المعقده</strong>
+                    <p>تفيد بشكل كبير في المواقف التي تحتوي علي عوامل متعدده ومتغيره</p>
+                </div>
+
+                <div class="imp-card">
+                    <strong>تقليل المخاطر</strong>
+                    <p> من خلال التنبؤ بالنتائج المحتمله،تساعد في اختيار الخيار الأقل خطوره
+                    <p>
+                </div>
+
+                <div class="imp-card">
+                    <strong>حلول متعدده للمشكله</strong>
+                    <p>تساعد في اقتراح وتحليل عده بدائل لحل المشكله،مما يتيح لمتخذ القرار مقارنه الخيارات المختلفه
+                        واختيار الحل الأنسب</p>
+                </div>
+
+                <div class="imp-card">
+                    <strong>دعم العمل الجماعي</strong>
+                    <p> تساعد في تعزيز العمل الجماعي من خلال توفير منصه مشتركه تتيح لأعضاء الفريق الوصول الي نفس
+                        البيانات والمعلومات</p>
+                </div>
+
+                <div class="imp-card">
+                    <strong>دعم التخطيط المستقبلي</strong>
+                    <p>تساعد المؤسسات في وضع خطه استراتيجيه مبنيه علي بيانات وتوقعات واقعيه</p>
+                </div>
+
+                <div class="imp-card">
+                    <strong>تحسين الكفاءة الإداريه</strong>
+                    <p> ترفع من كفاءة المديرين عبر توفير معلومات دقيقه وفي الوقت المناسب </p>
+                </div>
+
+            </div>
+
+        </div class="dss-wrapper">
+
+
+        <!-- 🟥 FEATURES -->
+        <div id="features" class="tab-content">
+
+            <h2 class="title">مميزات نظم دعم القرار</h2>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <strong>تحسين جودة القرارات</strong>
+                    <p>تساعد متخذ القرار على اختيار أفضل الحلول بناءً على بيانات دقيقة وتحليل منطقي.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>سرعة اتخاذ القرار</strong>
+                    <p>توفر الوقت والجهد لأن النظام يحلل البيانات بسرعة مقارنة بالطرق التقليدية.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>دعم القرارات المعقدة</strong>
+                    <p>مفيدة جدًا في حل المشكلات التي تحتوي على عدة عوامل متداخلة.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>الاعتماد على البيانات</strong>
+                    <p>تقلل من الاعتماد على الحدس أو التخمين الشخصي.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>تحليل السيناريوهات (ماذا لو)</strong>
+                    <p>إمكانية اختبار نتائج مختلفة قبل اتخاذ القرار الفعلي.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>زيادة كفاءة العمل</strong>
+                    <p>تساعد المؤسسات على العمل بشكل أسرع وأكثر دقة.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>تحسين التواصل داخل المؤسسة</strong>
+                    <p>البيانات المنظمة والمشتركة تسهل التنسيق بين الأقسام المختلف.</p>
+                </div>
+
+            </div>
+
+            <h2 class="title">عيوب نظم دعم القرار</h2>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <strong>تكلفة عالية</strong>
+                    <p>إنشاء وصيانة النظام يمكن أن يكون مكلفًا.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>الاعتماد الزائد على النظام</strong>
+                    <p>قد يؤدي إلى إهمال خبرة ومعرفة متخذ القرار.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>تعتمد على جودة البيانات</strong>
+                    <p>إذا كانت البيانات غير دقيقة، فالقرارات ستكون خاطئة.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>تعقيد النظام</strong>
+                    <p>بعض الأنظمة قد تكون صعبة الفهم أو الاستخدام.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>مخاطر أمن المعلومات</strong>
+                    <p>البيانات الحساسة قد تكون معرضة للاختراق.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>الحاجة لتدريب المستخدمين</strong>
+                    <p>يجب تدريب الأشخاص على استخدام النظام بشكل صحيح.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>لا يغني عن الإنسان بالكامل</strong>
+                    <p>النظام مساعد فقط، والقرار النهائي يبقى للإنسان.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 🟥 CHALLENGES -->
+        <div id="challenges" class="tab-content">
+
+            <h2 class="title">التحديات التي تواجه نظم دعم القرار</h2>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <strong>جمع البيانات الصحيحة والكاملة</strong>
+                    <p>صعوبة الحصول على بيانات دقيقة وموثوقة من مصادر مختلفة.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>تكامل البيانات</strong>
+                    <p>البيانات ممكن تكون موجودة في أنظمة متعددة، ودمجها يكون صعب.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>مقاومة التغيير</strong>
+                    <p>بعض الموظفين قد يرفضوا استخدام النظام الجديد أو يثقوا فقط بخبرتهم.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>تكلفة التنفيذ والصيانة</strong>
+                    <p>الأجهزة والبرمجيات والتدريب يحتاجوا استثمار كبير.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>حماية البيانات والأمان</strong>
+                    <p>خطر تسريب المعلومات الحساسة أو تعرض النظام للاختراق.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>تحديث النظام باستمرار</strong>
+                    <p>يجب تطوير النظام بشكل دائم لمواكبة التغيرات في بيئة العمل.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>صعوبة تفسير النتائج</strong>
+                    <p>بعض القرارات تعتمد على تحليلات معقدة قد يصعب فهمها بدون خبرة.</p>
+                </div>
+
+                <div class="feature-card">
+                    <strong>الاعتماد المفرط على النظام</strong>
+                    <p>قد يجعل متخذ القرار يقلل من دوره في التفكير النقدي واتخاذ القرار.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 🟫 SOFTWARE -->
+        <div id="software" class="tab-content">
+
+            <h2 class="title">الأدوات والبرامج المستخدمة</h2>
+
+            <table>
+                <tr>
+                    <th>البرنامج</th>
+                    <th>الاستخدام</th>
+                </tr>
+
+                <tr>
+                    <td><a href="../powerbi/powerbi.html">Power BI</a></td>
+                    <td>تحليل البيانات والتقارير</td>
+                </tr>
+
+                <tr>
+                    <td><a href="../SPSS/SPSS.html">SPSS</a></td>
+                    <td>برنامج للتحليل الإحصائي والتنبؤ بالمخاطر </td>
+                </tr>
+
+                <tr>
+                    <td><a href="../Excel/excel.html">Excel</a></td>
+                    <td> تحليل البيانات وعمل الجداول والحسابات والرسوم البيانيه </td>
+                </tr>
+
+                <tr>
+                    <td><a href="../trader/trader.html">MetaTrader</a></td>
+                    <td>منصه تداول وتحليل فني للأسواق الماليه </td>
+                </tr>
+
+            </table>
+
+            <div class="back">
+                <a href="../index.html">العودة للصفحة الرئيسية</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            let tabs = document.querySelectorAll(".tab-content");
+
+            tabs.forEach(tab => {
+                tab.style.display = "none";
+            });
+
+            document.getElementById(tabId).style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

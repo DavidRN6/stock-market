@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Cairo", sans-serif;
+}
+
+/*========= Navbar ============*/
+nav {
+  background: white;
+  padding: 15px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0f172a;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  gap: 10px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  color: #0f172a;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+.menu li a:hover {
+  background-color: orange;
+  border-radius: 6px;
+  color: white;
+}
+
+.submenu {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  position: absolute;
+  background: #1a263b;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  min-width: 160px;
+  z-index: 10;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  padding: 5px 0;
+  margin-top: 5px;
+}
+
+.dropdown:hover > .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.submenu li a {
+  padding: 10px 20px;
+  color: white;
+  transition: background 0.3s;
+}
+
+/*==========================*/
+
+/*============= Hero =============*/
+.hero {
+  height: 90vh;
+  background-image: url("Images/WhatsApp Image 2026-05-01 at 4.27.15 PM.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero h1 span {
+  color: orange;
+}
+
+/* عشان الكلام يطلع فوق */
+.hero-text {
+  position: relative;
+  font-size: 24px;
+  color: white;
+  max-width: 700px;
+  text-align: center;
+  margin: auto;
+}
+/*=============================*/
+
+/*=========== Features ===========*/
+.features {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #0f172a;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1a263b;
+  padding: 30px;
+  width: 250px;
+  max-width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #cbd5e1;
+}
+
+/*==============================*/
