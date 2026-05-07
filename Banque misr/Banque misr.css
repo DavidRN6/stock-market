@@ -131,7 +131,7 @@ nav {
 /*==========Content=========*/
 .title {
   text-align: center;
-  font-size: 36px;
+  font-size: 30px;
   color: #0f172a;
   font-weight: 700;
 }
@@ -144,6 +144,11 @@ nav {
   color: #1f2937;
   display: flex;
   justify-content: space-around;
+}
+
+.banque h2 {
+  font-size: 23px;
+  font-weight: 700;
 }
 
 img {
