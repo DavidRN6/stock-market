@@ -142,6 +142,20 @@ h1 {
 .item {
   margin-bottom: 10px;
 }
+.extra-info {
+  margin-top: 15px;
+  padding: 12px;
+  background: #eef4ff;
+  border-right: 4px solid orange;
+  border-radius: 12px;
+}
+
+.extra-info h4 {
+  margin-bottom: 8px;
+  color: orange;
+  font-size: 17px;
+  font-weight: 700;
+}
 
 /* الزر */
 .accordion button {
@@ -174,9 +188,13 @@ button:hover {
   transition: max-height 0.4s ease;
 }
 
+.content p {
+  font-weight: 600;
+}
+
 /* عند الفتح */
 .item.active .content {
-  max-height: 100px;
+  max-height: 190px;
   padding: 15px;
 }
 
