@@ -1,171 +1,231 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Market</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../Images/business.webp" />
+    <link rel="stylesheet" href="SPSS.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <a href="/home.html">
+          <i
+            class="fa-solid fa-chart-column"
+            style="color: rgb(255, 165, 0)"
+          ></i>
+          Stock Market
+        </a>
+      </div>
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="SPSS.css">
-    <title>برنامج SPSS</title>
-</head>
-<div class="spss-card">
+      <ul class="menu">
+        <li class="dropdown">
+          <a href="#">
+            Market Info
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ul class="submenu">
+            <li><a href="../egx/egx.html">Egyptian stock Exchange</a></li>
+            <li><a href="../Banque misr/Banque misr.html">Banque Misr</a></li>
+          </ul>
+        </li>
+        <li><a href="../investors/investors.html">Investors</a></li>
+        <li><a href="../stock terms/stock terms.html">Stock Terms</a></li>
+        <li><a href="../DSS/DSS.html">DSS</a></li>
+      </ul>
+    </nav>
 
-    <!-- العنوان الرئيسي -->
-    <div class="header-title">
-        <h1>
-            <span></span> SPSS <span>📋</span>
-        </h1>
-        <div class="container">
-            <video width="600" height="350" controls>
-                <source src="../video/WhatsApp -Video  .mp4" type="video/mp4">
-                المتصفح لا يدعم تشغيل الفيديو
-            </video>
+    <button onclick="history.back()" class="btn">
+      <i class="fa-solid fa-arrow-left"></i>
+      رجوع
+    </button>
+
+    <h1 class="title">SPSS</h1>
+
+    <section class="egx" dir="rtl">
+      <!-- Right -->
+      <div>
+        <!-- 1 التعريف -->
+        <div>
+          <h2>🔎 ماهو SPSS ؟</h2>
+          <p>
+            <strong>SPSS</strong> (الحزمة الإحصائية للعلوم الاجتماعية) هو برنامج
+            <strong>تحليل إحصائي</strong>
+            متكامل، تم تطويره لإدارة البيانات وإجراء التحليلات المعقدة بسهولة.
+            يُستخدم في مجالات عديدة مثل:
+          </p>
         </div>
 
-        <!-- الفقرة 1: ماهو البرنامج واستخداماته -->
-        <div class="info-block">
-            <div class="block-header">
-                <div class="block-icon"></div>
-                <h2>🔎 ماهو SPSS وإستخداماته؟</h2>
-            </div>
-            <div class="block-content">
-                <p><strong>SPSS</strong> (الحزمة الإحصائية للعلوم الاجتماعية) هو برنامج <strong>تحليل
-                        إحصائي</strong>
-                    متكامل، تم تطويره لإدارة البيانات وإجراء التحليلات المعقدة بسهولة. يُستخدم في مجالات عديدة مثل:
-                </p>
-                <ul class="feature-list">
-                    <li><strong>📊 البحوث العلمية</strong> (رسائل ماجستير ودكتوراه) – لتحليل الاستبيانات والبيانات
-                        الميدانية.</li>
-                    <li><strong>🏥 المجال الطبي والصحي</strong> – لتحليل التجارب السريرية والدراسات الوبائية.</li>
-                    <li><strong>📈 أبحاث السوق والتسويق</strong> – لدراسة سلوك المستهلك وتوقع الاتجاهات.</li>
-                    <li><strong>🏛️ الجهات الحكومية</strong> – في الإحصاءات السكانية والمسوح الاقتصادية.</li>
-                    <li><strong>📚 علم النفس والتربية</strong> – لتحليل الاختبارات والمقاييس النفسية.</li>
-                </ul>
-            </div>
+        <!-- 2 استخدماته -->
+        <div id="tab2" class="content">
+          <h4>🧾 ما هى استخدامات SPSS؟</h4>
+
+          <ul>
+            <li>
+              <strong>📊 البحوث العلمية</strong> (رسائل ماجستير ودكتوراه) –
+              لتحليل الاستبيانات والبيانات الميدانية.
+            </li>
+            <li>
+              <strong>🏥 المجال الطبي والصحي</strong> – لتحليل التجارب السريرية
+              والدراسات الوبائية.
+            </li>
+            <li>
+              <strong>📈 أبحاث السوق والتسويق</strong> – لدراسة سلوك المستهلك
+              وتوقع الاتجاهات.
+            </li>
+            <li>
+              <strong>🏛️ الجهات الحكومية</strong> – في الإحصاءات السكانية
+              والمسوح الاقتصادية.
+            </li>
+            <li>
+              <strong>📚 علم النفس والتربية</strong> – لتحليل الاختبارات
+              والمقاييس النفسية.
+            </li>
+          </ul>
         </div>
 
-        <!-- الفقرة 2: تاريخ الإنشاء والمطور -->
-        <div class="info-block">
-            <div class="block-header">
-                <div class="block-icon">⏳</div>
-                <h2>⏱️ من صنعه ومتى ظهر؟</h2>
-            </div>
-            <div class="block-content">
-                <p>👨‍💻 <strong>المطور:</strong> بدأ البرنامج في <strong>جامعة ستانفورد</strong> عام
-                    <strong>1968</strong> على يد نورمان ناي وزميليه، ثم أنشئت شركة SPSS Inc. لتسويقه. في عام
-                    <strong>2009</strong> استحوذت عليه شركة <strong>IBM</strong> وأصبح اسمه الرسمي <strong>IBM SPSS
-                        Statistics</strong>.
-                </p>
-                <p>📅 أقدم نسخة تجارية كانت <strong>SPSS 1.0</strong> عام 1968، واليوم الإصدار الأحدث هو
-                    <strong>SPSS
-                        29</strong> (أو 30 في بعض الإصدارات) مع تحديثات سنوية.
-                </p>
-                <ul class="version-list">
-                    <li><strong>1968:</strong> النسخة الأولى على الحاسوب الرئيسي.</li>
-                    <li><strong>1984:</strong> أول إصدار يعمل على DOS.</li>
-                    <li><strong>2009:</strong> استحواذ IBM والتطوير تحت مظلتها.</li>
-                </ul>
-            </div>
+        <!-- 3 النشأه -->
+        <div class="card">
+          <h2>⏱️ من صنعه ومتى ظهر؟</h2>
+          <p>
+            👨‍💻 <strong>المطور:</strong> بدأ البرنامج في
+            <strong>جامعة ستانفورد</strong> عام <strong>1968</strong> على يد
+            نورمان ناي وزميليه، ثم أنشئت شركة SPSS Inc. لتسويقه. في عام
+            <strong>2009</strong> استحوذت عليه شركة <strong>IBM</strong> وأصبح
+            اسمه الرسمي <strong>IBM SPSS Statistics</strong>.
+          </p>
+          <p>
+            📅 أقدم نسخة تجارية كانت <strong>SPSS 1.0</strong> عام 1968، واليوم
+            الإصدار الأحدث هو <strong>SPSS 29</strong> (أو 30 في بعض الإصدارات)
+            مع تحديثات سنوية.
+          </p>
+          <ul>
+            <li><strong>1968:</strong> النسخة الأولى على الحاسوب الرئيسي.</li>
+            <li><strong>1984:</strong> أول إصدار يعمل على DOS.</li>
+            <li><strong>2009:</strong> استحواذ IBM والتطوير تحت مظلتها.</li>
+          </ul>
         </div>
 
-        <!-- الفقرة 3: طريقة العمل والمميزات -->
-        <div class="info-block">
-            <div class="block-header">
-                <div class="block-icon">⚙️</div>
-                <h2>🧰 كيف يعمل ومكوناته؟</h2>
-            </div>
-            <div class="block-content">
-                <p>يعتمد SPSS على واجهة سهلة تجمع بين <strong>القوائم</strong> و <strong>لغة الأوامر
-                        syntax</strong>.
-                    أشهر مكوناته:</p>
-                <ul class="feature-list">
-                    <li><strong>عرض البيانات (Data View):</strong> جدول يشبه Excel، تُدخل فيه القيم.</li>
-                    <li><strong>عرض المتغيرات (Variable View):</strong> تحدد فيه خصائص كل متغير (النوع، التسمية،
-                        القيم...).</li>
-                    <li><strong>محلل النتائج (Output Viewer):</strong> يعرض الجداول والرسوم البيانية بعد التحليل.
-                    </li>
-                    <li><strong>محرر الرسوم (Chart Editor):</strong> لتعديل الرسوم بشكل احترافي.</li>
-                    <li><strong>لغة الأوامر (Syntax Editor):</strong> لتوثيق وإعادة التحليل بأوامر نصية.</li>
-                </ul>
-                <p>🔧 يمكنه استيراد بيانات من Excel, CSV, SAS, وحتى قواعد بيانات SQL.</p>
-            </div>
+        <!-- البرنامج مجانى ام لا -->
+        <section class="trading">
+          <h2>🗺️ الدول والتوفر واللغة العربية</h2>
+          <p>
+            يعتبر SPSS برنامجًا تجاريًا مدفوع الثمن، ولا يوجد إصدار مجاني كامل
+            منه.
+          </p>
+
+          <div class="card">
+            <h3>
+              SPBS متوفر في <strong>جميع دول العالم</strong> تقريبًا عبر موقع
+              IBM والموزعين المعتمدين.
+            </h3>
+            <ul style="columns: 2; column-gap: 10px">
+              <li>🇪🇬 مصر</li>
+              <li>🇸🇦 السعودية</li>
+              <li>🇦🇪 الإمارات</li>
+              <li>🇺🇸 أمريكا</li>
+              <li>🇬🇧 بريطانيا</li>
+              <li>🇩🇪 ألمانيا</li>
+              <li>🇫🇷 فرنسا</li>
+              <li>🇯🇵 اليابان</li>
+              <li>🇨🇳 الصين</li>
+              <li>🇧🇷 البرازيل</li>
+            </ul>
+            <p>
+              🌍 <strong>اللغات المدعومة:</strong> البرنامج يدعم الإنجليزية،
+              الفرنسية، الألمانية، الإسبانية، الإيطالية، اليابانية، الصينية،
+              الكورية، البولندية، الروسية... لكنه
+              <strong>لا يدعم اللغة العربية</strong> في واجهته. يمكن كتابة
+              المحتوى (مثل أسماء المتغيرات) بالعربية في الإصدارات الحديثة ولكن
+              الواجهة والقوائم باللغات الأجنبية.
+            </p>
+            <p>
+              <strong>📌 ملاحظة مهمة:</strong>
+              يوجد خيارات لتثبيت واجهة إنجليزية مع إدخال بيانات بالعربية، لكن
+              الدعم الكامل للغة العربية (كتابة عربية من اليمين لليسار) غير متوفر
+              في الإصدارات العادية.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Left -->
+      <div>
+        <video controls muted>
+          <source src="../video/WhatsApp -Video  .mp4" type="video/mp4" />
+        </video>
+
+        <!-- كيف يعمل -->
+        <div id="tab3" class="content">
+          <h4>🧰 كيف يعمل ومكوناته؟</h4>
+          <p>
+            يعتمد SPSS على واجهة سهلة تجمع بين <strong>القوائم</strong> و
+            <strong>لغة الأوامر syntax</strong>. أشهر مكوناته:
+          </p>
+
+          <ul>
+            <li>
+              <strong>عرض البيانات (Data View):</strong> جدول يشبه Excel، تُدخل
+              فيه القيم.
+            </li>
+            <li>
+              <strong>عرض المتغيرات (Variable View):</strong> تحدد فيه خصائص كل
+              متغير (النوع، التسمية، القيم...).
+            </li>
+            <li>
+              <strong>محلل النتائج (Output Viewer):</strong> يعرض الجداول
+              والرسوم البيانية بعد التحليل.
+            </li>
+            <li>
+              <strong>محرر الرسوم (Chart Editor):</strong> لتعديل الرسوم بشكل
+              احترافي.
+            </li>
+            <li>
+              <strong>لغة الأوامر (Syntax Editor):</strong> لتوثيق وإعادة
+              التحليل بأوامر نصية.
+            </li>
+          </ul>
         </div>
 
-        <!-- الفقرة 4: هل البرنامج مجاني؟ -->
-        <div class="info-block">
-            <div class="block-header">
-                <div class="block-icon">💵</div>
-                <h2>💰 هل هو مجاني؟ الخطط المتاحة</h2>
-            </div>
-            <div class="block-content">
-                <p><span class="pricing-badge">💡 إصدار تجريبي مجاني 30 يومًا</span> <span class="pricing-badge"
-                        style="background: #145a8d;">🏫 تراخيص أكاديمية</span></p>
-                <p>SPSS <strong>ليس مجانيًا</strong> بشكل دائم، لكن تتوفر عدة طرق:</p>
-                <ul style="margin-right: 25px; margin-bottom: 20px;">
-                    <li><strong>✅ النسخة التجريبية:</strong> مجانية لمدة 30 يومًا من موقع IBM.</li>
-                    <li><strong>📚 الإصدار الطلابي:</strong> بعض الجامعات توفر اشتراكًا مخفضًا أو مدفوعًا لطلابها.
-                    </li>
-                    <li><strong>🧑‍🎓 ترخيص GradPack:</strong> مخصص للطلبة بسعر مخفض (حوالي 80–100 دولار سنويًا).
-                    </li>
-                    <li><strong>🏢 التراخيص التجارية:</strong> باهظة الثمن (آلاف الدولارات) للشركات والمؤسسات.</li>
-                    <li><strong>🧾 ملاحظة:</strong> لا يوجد إصدار مفتوح المصدر، لكن يمكن استخدام بدائل مجانية مثل
-                        <strong>JASP</strong> أو <strong>Jamovi</strong> التي تشبهه.
-                    </li>
-                </ul>
-            </div>
+        <!-- مميزات SPSS -->
+        <div id="tab5" class="content">
+          <h4>📌 مميزات SPSS في البحث العلمي</h4>
+          <p>
+            يتميز SPSS بقدرته على إجراء تحليلات معقدة دون حاجة لبرمجة عميقة، ومن
+            أشهر التحاليل التي تجريها الباحثين:
+          </p>
+          <ul style="columns: 2; column-gap: 40px; margin-right: 30px">
+            <li>الإحصاء الوصفي (متوسطات، انحرافات)</li>
+            <li>اختبارات T ومقارنة المتوسطات</li>
+            <li>تحليل التباين (ANOVA)</li>
+            <li>الارتباط والانحدار الخطي</li>
+            <li>التحليل العاملي</li>
+            <li>اختبارات مربع كاي</li>
+            <li>النماذج الخطية العامة</li>
+            <li>الرسوم البيانية التفاعلية</li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-        <!-- الفقرة 5: الدول والتوفر اللغوي -->
-        <div class="info-block">
-            <div class="block-header">
-                <div class="block-icon">🌐</div>
-                <h2>🗺️ الدول والتوفر واللغة العربية</h2>
-            </div>
-            <div class="block-content">
-                <p>SPBS متوفر في <strong>جميع دول العالم</strong> تقريبًا عبر موقع IBM والموزعين المعتمدين.</p>
-                <div class="countries-list">
-                    <span class="country-badge">🇪🇬 مصر</span>
-                    <span class="country-badge">🇸🇦 السعودية</span>
-                    <span class="country-badge">🇦🇪 الإمارات</span>
-                    <span class="country-badge">🇺🇸 أمريكا</span>
-                    <span class="country-badge">🇬🇧 بريطانيا</span>
-                    <span class="country-badge">🇩🇪 ألمانيا</span>
-                    <span class="country-badge">🇫🇷 فرنسا</span>
-                    <span class="country-badge">🇯🇵 اليابان</span>
-                    <span class="country-badge">🇨🇳 الصين</span>
-                    <span class="country-badge">🇧🇷 البرازيل</span>
-                </div>
-                <p>🌍 <strong>اللغات المدعومة:</strong> البرنامج يدعم الإنجليزية، الفرنسية، الألمانية، الإسبانية،
-                    الإيطالية، اليابانية، الصينية، الكورية، البولندية، الروسية... لكنه <strong>لا يدعم اللغة
-                        العربية</strong> في واجهته. يمكن كتابة المحتوى (مثل أسماء المتغيرات) بالعربية في الإصدارات
-                    الحديثة ولكن الواجهة والقوائم باللغات الأجنبية.</p>
-                <div class="note-highlight">
-                    <strong>📌 ملاحظة مهمة:</strong>
-                    يوجد خيارات لتثبيت واجهة إنجليزية مع إدخال بيانات بالعربية، لكن الدعم الكامل للغة العربية (كتابة
-                    عربية من اليمين لليسار) غير متوفر في الإصدارات العادية.
-                </div>
-            </div>
-        </div>
-
-        <!-- الفقرة 6: استخداماته في البحث العلمي (فقرة إضافية) -->
-        <div class="info-block">
-            <div class="block-header">
-                <div class="block-icon">📚</div>
-                <h2>📌 مميزات SPSS في البحث العلمي</h2>
-            </div>
-            <div class="block-content">
-                <p>يتميز SPSS بقدرته على إجراء تحليلات معقدة دون حاجة لبرمجة عميقة، ومن أشهر التحاليل التي تجريها
-                    الباحثين:</p>
-                <ul style="columns: 2; column-gap: 40px; list-style: square; margin-right: 30px;">
-                    <li>الإحصاء الوصفي (متوسطات، انحرافات)</li>
-                    <li>اختبارات T ومقارنة المتوسطات</li>
-                    <li>تحليل التباين (ANOVA)</li>
-                    <li>الارتباط والانحدار الخطي</li>
-                    <li>التحليل العاملي</li>
-                    <li>اختبارات مربع كاي</li>
-                    <li>النماذج الخطية العامة</li>
-                    <li>الرسوم البيانية التفاعلية</li>
-                </ul>
-            </div>
-
-            </body>
-
+    <div class="back-home">
+      <a href="../home.html">
+        <i class="fa-solid fa-house"></i>
+        العودة للصفحة الرئيسية
+      </a>
+    </div>
+  </body>
 </html>
