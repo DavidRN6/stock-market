@@ -7,7 +7,7 @@
 
 .title {
   text-align: center;
-  font-size: 36px;
+  font-size: 30px;
   color: #0f172a;
   font-weight: 700;
 }
@@ -36,7 +36,8 @@ img {
 /* العناوين */
 .egx h2 {
   margin-top: 40px;
-  font-size: 26px;
+  font-size: 23px;
+  font-weight: 700;
   color: #0f172a;
   border-right: 4px solid #2563eb;
   padding-right: 10px;
