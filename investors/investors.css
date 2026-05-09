@@ -138,13 +138,14 @@ nav {
 
 /* العنوان */
 .investors-page h1 {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
 }
 
 .subtitle {
   color: #64748b;
   margin-bottom: 30px;
+  font-size: 19px;
   font-weight: 600;
 }
 
@@ -173,7 +174,7 @@ nav {
 
 .card h2 {
   margin-bottom: 15px;
-  font-size: 19px;
+  font-size: 21px;
   text-align: center;
 }
 
