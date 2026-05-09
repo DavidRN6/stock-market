@@ -209,7 +209,7 @@ details[open] {
 /* العنوان */
 summary {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   padding: 12px;
   background: #eef2f7;
   cursor: pointer;
@@ -235,7 +235,7 @@ details p,
 details ul {
   padding: 12px;
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   background: #fff;
   line-height: 1.7;
