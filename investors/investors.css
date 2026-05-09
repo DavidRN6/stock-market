@@ -173,7 +173,7 @@ nav {
 
 .card h2 {
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 17px;
   text-align: center;
 }
 
@@ -209,7 +209,7 @@ details[open] {
 /* العنوان */
 summary {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   padding: 12px;
   background: #eef2f7;
   cursor: pointer;
@@ -235,7 +235,7 @@ details p,
 details ul {
   padding: 12px;
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   background: #fff;
   line-height: 1.7;
